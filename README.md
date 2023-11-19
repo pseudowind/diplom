@@ -86,10 +86,15 @@ ansible-playbook prometheus1.yaml
 
 ### Устанавливаем Grafana
 Пришлось устанавливать ручками, ввиду недоступности Графаны. Использовался материал лекции, подключался по ssh
+
 sudo wget https://dl.grafana.com/oss/release/grafana_9.2.4_amd64.deb
+
 sudo dpkg -i grafana_9.2.4_amd64.deb
+
 sudo systemctl enable grafana-server
+
 sudo systemctl start grafana-server
+
 sudo systemctl status grafana-server
 
 ### Смотрим метрики (использовался [11074 Dashboard ID](https://grafana.com/grafana/dashboards/11074-node-exporter-for-prometheus-dashboard-en-v20201010/))
