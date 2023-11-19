@@ -27,7 +27,7 @@
 
 ### ping-pong
 ansible all -m ping
-![1-24](https://github.com/pseudowind/diplom/blob/main/screens/ansible-ping.PNG)
+![1-24](https://github.com/pseudowind/diplom/blob/main/screens/ansible_ping.PNG)
 
 ## Сайт
 Создайте две ВМ в разных зонах, установите на них сервер nginx, если его там нет. ОС и содержимое ВМ должно быть идентичным, это будут наши веб-сервера.
