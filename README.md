@@ -85,6 +85,9 @@ ansible-playbook node-exporter1.yaml
 
 ![1-7](https://github.com/pseudowind/diplom/blob/main/screens/node-exporter.PNG)
 
+### Устанавливаем Prometheus
+![1-7](https://github.com/pseudowind/diplom/blob/main/screens/prom_install.PNG)
+
 ansible-playbook prometheus.yaml
 
 ansible-playbook prometheus1.yaml
@@ -126,7 +129,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![1-7](https://github.com/pseudowind/diplom/blob/main/screens/kibana-site.PNG)
 
 ### Смотрим метрику
-
+![1-7](https://github.com/pseudowind/diplom/blob/main/screens/kibana_logs.PNG)
 
 ## Сеть
 Разверните один VPC. Сервера web, Prometheus, Elasticsearch поместите в приватные подсети. Сервера Grafana, Kibana, application load balancer определите в публичную подсеть.
