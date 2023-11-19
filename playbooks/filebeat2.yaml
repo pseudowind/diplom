@@ -1,0 +1,26 @@
+---
+- hosts: web
+  become: yes
+  gather_facts: true
+  tasks:
+
+  - name: copy filebeat.deb
+    copy:
+      src: /home/misha/filebeat-6.3.2-amd64.deb
+      dest: /home/user
+
+  - name: install filebeat
+    apt:
+      deb: /home/user/filebeat-6.3.2-amd64.deb
+
+  - name: copy filebeat config file
+    copy:
+      src: /home/misha/filebeat.yml
+      dest: /etc/filebeat/filebeat.yml
+
+  - name: Make sure a service is running
+    systemd:
+      state: started
+      name: filebeat
+
+
