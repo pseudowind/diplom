@@ -69,16 +69,24 @@ ansible-playbook nginx1.yaml
 
 ### Устанавливаем Log Exporter
 Была использована [роль](https://galaxy.ansible.com/ui/standalone/roles/mbaran0v/ansible_role_prometheus_nginxlog_exporter/)
+
 ansible-galaxy role install mbaran0v.ansible_role_prometheus_nginxlog_exporter
+
 ansible-playbook nginxlog-exporter.yaml
+
 ![1-7](https://github.com/pseudowind/diplom/blob/main/screens/nginxlog-exporter.PNG)
 
 ### Устанавливаем Node Exporter
 Была использована [роль](https://galaxy.ansible.com/ui/standalone/roles/cloudalchemy/node_exporter/)
+
 ansible-galaxy role install cloudalchemy.node_exporter
+
 ansible-playbook node-exporter1.yaml
+
 ![1-7](https://github.com/pseudowind/diplom/blob/main/screens/node-exporter.PNG)
+
 ansible-playbook prometheus.yaml
+
 ansible-playbook prometheus1.yaml
 
 
